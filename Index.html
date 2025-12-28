@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Red Chilly Karad | Biryani, Akkha Masura & Function Hall</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .bg-deep-red { background-color: #C41E3A; }
+        .text-deep-red { color: #C41E3A; }
+        .border-deep-red { border-color: #C41E3A; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-pepper-hot text-deep-red text-2xl"></i>
+                <span class="text-xl font-bold tracking-tight text-gray-900 uppercase">Red Chilly</span>
+            </div>
+            <div class="md:hidden text-deep-red text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#home" class="hover:text-deep-red">Home</a>
+                <a href="#menu" class="hover:text-deep-red">Menu</a>
+                <a href="#hall" class="hover:text-deep-red">Function Hall</a>
+                <a href="#gallery" class="hover:text-deep-red">Gallery</a>
+                <a href="#contact" class="hover:text-deep-red">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-[80vh] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1200&q=80" alt="Biryani" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Taste the Authentic Flavors of Karad</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-200">Home of the famous Biryani and Akkha Masura</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#menu" class="bg-deep-red hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold transition">View Menu</a>
+                <a href="#hall" class="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition">Book Function Hall</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-gray-900">Our Heritage</h2>
+        <div class="max-w-3xl mx-auto">
+            <p class="text-gray-600 leading-relaxed text-lg">
+                Hotel Red Chilly is a culinary landmark in Karad, dedicated to bringing you the richest non-veg delicacies. We are renowned for our signature **Biryani** and authentic **Akkha Masura**, prepared with secret spices and tradition.
+            </p>
+        </div>
+    </section>
+
+    <section id="menu" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Delicious Menu</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-deep-red">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Chicken Biryani</h3>
+                        <p class="text-gray-500 text-sm mb-4">Slow-cooked aromatic basmati rice with tender chicken.</p>
+                        <span class="text-deep-red font-bold text-lg">₹240</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-deep-red">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Special Akkha Masura</h3>
+                        <p class="text-gray-500 text-sm mb-4">A spicy, traditional Karad favorite served with Bhakri/Roti.</p>
+                        <span class="text-deep-red font-bold text-lg">₹160</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-deep-red">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Mutton Sukka</h3>
+                        <p class="text-gray-500 text-sm mb-4">Authentic spicy dry mutton prepared in local style.</p>
+                        <span class="text-deep-red font-bold text-lg">₹320</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hall" class="py-20 bg-charcoal text-white bg-slate-800">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+            <div class="flex-1">
+                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-2xl">
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-4 italic">The Grand Function Hall</h2>
+                <p class="text-gray-300 mb-6 italic">Celebrate your special moments with us. Our spacious, air-conditioned hall is perfect for:</p>
+                <ul class="space-y-3 mb-8">
+                    <li><i class="fa-solid fa-check text-green-400 mr-2"></i> Birthday Parties</li>
+                    <li><i class="fa-solid fa-check text-green-400 mr-2"></i> Engagement Ceremonies</li>
+                    <li><i class="fa-solid fa-check text-green-400 mr-2"></i> Corporate Meetings</li>
+                </ul>
+                <a href="#contact" class="bg-deep-red px-8 py-3 rounded-lg font-bold inline-block">Check Availability</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-16 container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Gallery</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" class="rounded-lg h-48 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=400&q=80" class="rounded-lg h-48 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=400&q=80" class="rounded-lg h-48 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" class="rounded-lg h-48 w-full object-cover">
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white p-8 rounded-2xl shadow-xl border-b-8 border-deep-red">
+                <h3 class="text-2xl font-bold mb-6 italic">Send an Inquiry</h3>
+                <form id="waForm" class="space-y-4">
+                    <input type="text" id="name" placeholder="Full Name" class="w-full p-3 bg-gray-100 rounded-lg outline-none focus:ring-2 focus:ring-red-500" required>
+                    <input type="date" id="date" class="w-full p-3 bg-gray-100 rounded-lg outline-none focus:ring-2 focus:ring-red-500" required>
+                    <select id="event" class="w-full p-3 bg-gray-100 rounded-lg outline-none focus:ring-2 focus:ring-red-500">
+                        <option value="Food/Table Booking">Table Booking</option>
+                        <option value="Function Hall Booking">Function Hall</option>
+                        <option value="Parcel/Catering">Catering Inquiry</option>
+                    </select>
+                    <textarea id="msg" placeholder="Your Message" rows="3" class="w-full p-3 bg-gray-100 rounded-lg outline-none focus:ring-2 focus:ring-red-500"></textarea>
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg flex items-center justify-center gap-2 transition">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Send to WhatsApp
+                    </button>
+                </form>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Find Us</h3>
+                <p class="mb-4 font-bold text-gray-700"><i class="fa-solid fa-location-dot text-deep-red mr-2"></i> Near Sterling Gym, Vidyanagar, Karad, Maharashtra 415124</p>
+                <div class="w-full h-64 bg-gray-300 rounded-2xl flex items-center justify-center">
+                    <p class="text-gray-600 font-bold uppercase tracking-widest"><i class="fa-solid fa-map"></i> Map Placeholder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-10 text-center">
+        <p class="text-lg font-bold italic mb-2 text-deep-red uppercase tracking-widest">Hotel Red Chilly</p>
+        <p class="text-gray-400 text-sm italic">Designed for Excellence in Taste.</p>
+    </footer>
+
+    <a href="tel:+917620038740" class="fixed bottom-6 left-6 bg-deep-red text-white p-4 rounded-full shadow-2xl z-50 animate-bounce">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <script>
+        document.getElementById('waForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const date = document.getElementById('date').value;
+            const event = document.getElementById('event').value;
+            const msg = document.getElementById('msg').value;
+            
+            // Encode the message for the URL
+            const text = `*New Inquiry for Red Chilly*%0A*Name:* ${name}%0A*Date:* ${date}%0A*Type:* ${event}%0A*Message:* ${msg}`;
+            
+            // Replace with the actual hotel WhatsApp number
+            const phone = "917620038749"; 
+            window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+</html>
