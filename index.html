@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,12 +139,23 @@
             </div>
 
             <div>
-                <h3 class="text-2xl font-bold mb-6">Find Us</h3>
-                <p class="mb-4 font-bold text-gray-700"><i class="fa-solid fa-location-dot text-deep-red mr-2"></i> Near Sterling Gym, Vidyanagar, Karad, Maharashtra 415124</p>
-                <div class="w-full h-64 bg-gray-300 rounded-2xl flex items-center justify-center">
-                    <p class="text-gray-600 font-bold uppercase tracking-widest"><i class="fa-solid fa-map"></i> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2299.1959264264187!2d74.18832644975356!3d17.300349776610464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1822395555553%3A0xa79f21e3d7e09e00!2sHotel%20Red%20Chilly%2C%20Karad!5e0!3m2!1sen!2sin!4v1767256592414!5m2!1sen!2sin" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-                </div>
-            </div>
+    <h3 class="text-2xl font-bold mb-6">Find Us</h3>
+    <p class="mb-4 font-bold text-gray-700">
+        <i class="fa-solid fa-location-dot text-deep-red mr-2"></i> 
+        Near Sterling Gym, Vidyanagar, Karad, Maharashtra 415124
+    </p>
+    <div class="w-full h-64 bg-gray-300 rounded-2xl overflow-hidden shadow-inner">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2299.1959264264187!2d74.18832644975356!3d17.300349776610464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1822395555553%3A0xa79f21e3d7e09e00!2sHotel%20Red%20Chilly%2C%20Karad!5e0!3m2!1sen!2sin!4v1767256592414!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
         </div>
     </section>
 
@@ -172,5 +184,61 @@
             window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
         });
     </script>
+    <script>
+    (function() {
+        // 1. Create a darkened background (Overlay)
+        const overlay = document.createElement('div');
+        overlay.style = `
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); z-index: 9998; display: none;
+        `;
+        
+        // 2. Create the Sidebar Menu (Smaller Width)
+        const sideMenu = document.createElement('div');
+        sideMenu.style = `
+            position: fixed; top: 0; right: -80%; width: 75%; height: 100%; 
+            background: #fff; z-index: 9999; display: flex; flex-direction: column;
+            padding: 40px 20px; transition: right 0.3s ease-out; box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        `;
+        
+        sideMenu.innerHTML = `
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
+                <span style="font-weight: bold; color: #C41E3A;">RED CHILLY</span>
+                <i class="fa-solid fa-xmark" id="closeMenu" style="font-size: 24px; color: #333; cursor: pointer;"></i>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <a href="#home" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Home</a>
+                <a href="#menu" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Menu</a>
+                <a href="#hall" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Function Hall</a>
+                <a href="#gallery" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Gallery</a>
+                <a href="#contact" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Contact</a>
+            </div>
+        `;
+        
+        document.body.appendChild(overlay);
+        document.body.appendChild(sideMenu);
+
+        const mobileBtn = document.querySelector('.md\\:hidden.text-deep-red');
+        const closeBtn = document.getElementById('closeMenu');
+
+        const openAction = () => {
+            overlay.style.display = 'block';
+            setTimeout(() => { sideMenu.style.right = '0'; }, 10);
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeAction = () => {
+            sideMenu.style.right = '-80%';
+            setTimeout(() => { overlay.style.display = 'none'; }, 300);
+            document.body.style.overflow = 'auto';
+        };
+
+        mobileBtn.addEventListener('click', openAction);
+        closeBtn.addEventListener('click', closeAction);
+        overlay.addEventListener('click', closeAction);
+        sideMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeAction));
+    })();
+</script>
 </body>
 </html>
