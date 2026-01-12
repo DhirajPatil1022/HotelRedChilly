@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Red Chilly Karad | Biryani, Akkha Masura & Function Hall</title>
+    <title>Hotel Red Chilli Karad | Biryani, Akkha Masura & Function Hall</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -18,11 +17,13 @@
 
     <nav class="sticky top-0 z-50 bg-white shadow-md">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-pepper-hot text-deep-red text-2xl"></i>
-                <span class="text-xl font-bold tracking-tight text-gray-900 uppercase">Red Chilly</span>
+            <div class="flex items-center">
+                <a href="#home">
+                   <img src="logo.jpg" alt="Hotel Red Chilli" class="h-16 md:h-24 w-auto object-contain mix-blend-multiply">
+
+                </a>
             </div>
-            <div class="md:hidden text-deep-red text-2xl">
+            <div class="md:hidden text-deep-red text-2xl cursor-pointer">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="hidden md:flex space-x-6 font-medium">
@@ -42,7 +43,7 @@
             <p class="text-lg md:text-xl mb-8 text-gray-200">Home of the famous Biryani and Akkha Masura</p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
                 <a href="#menu" class="bg-deep-red hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold transition">View Menu</a>
-                <a href="#hall" class="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition">Book Function Hall</a>
+                <a href="#contact" class="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition">Book Function Hall / Table</a>
             </div>
         </div>
     </section>
@@ -51,7 +52,7 @@
         <h2 class="text-3xl font-bold mb-6 text-gray-900">Our Heritage</h2>
         <div class="max-w-3xl mx-auto">
             <p class="text-gray-600 leading-relaxed text-lg">
-                Hotel Red Chilly is a culinary landmark in Karad, dedicated to bringing you the richest non-veg delicacies. We are renowned for our signature **Biryani** and authentic **Akkha Masura**, prepared with secret spices and tradition.
+                Hotel Red Chilli is a culinary landmark in Karad, dedicated to bringing you the richest non-veg delicacies. We are renowned for our signature **Biryani** and authentic **Akkha Masura**, prepared with secret spices and tradition.
             </p>
         </div>
     </section>
@@ -59,28 +60,25 @@
     <section id="menu" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Our Delicious Menu</h2>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-deep-red">
-                    <img src="b1.jpg" class="w-full h-48 object-cover">
+                    <img src="biryani.jpeg" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="font-bold text-xl mb-2">Chicken Biryani</h3>
                         <p class="text-gray-500 text-sm mb-4">Slow-cooked aromatic basmati rice with tender chicken.</p>
                         <span class="text-deep-red font-bold text-lg">₹240</span>
                     </div>
                 </div>
-
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-deep-red">
-                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover">
+                    <img src="akham.jpeg" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="font-bold text-xl mb-2">Special Akkha Masura</h3>
                         <p class="text-gray-500 text-sm mb-4">A spicy, traditional Karad favorite served with Bhakri/Roti.</p>
                         <span class="text-deep-red font-bold text-lg">₹160</span>
                     </div>
                 </div>
-
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden border-t-4 border-deep-red">
-                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover">
+                    <img src="mutton.jpg" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="font-bold text-xl mb-2">Mutton Sukka</h3>
                         <p class="text-gray-500 text-sm mb-4">Authentic spicy dry mutton prepared in local style.</p>
@@ -91,7 +89,7 @@
         </div>
     </section>
 
-    <section id="hall" class="py-20 bg-charcoal text-white bg-slate-800">
+    <section id="hall" class="py-20 bg-slate-800 text-white">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
             <div class="flex-1">
                 <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-2xl">
@@ -122,7 +120,7 @@
     <section id="contact" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
             <div class="bg-white p-8 rounded-2xl shadow-xl border-b-8 border-deep-red">
-                <h3 class="text-2xl font-bold mb-6 italic">Send an Inquiry</h3>
+                <h3 class="text-2xl font-bold mb-6 italic">Send an Inquiry or Booking</h3>
                 <form id="waForm" class="space-y-4">
                     <input type="text" id="name" placeholder="Full Name" class="w-full p-3 bg-gray-100 rounded-lg outline-none focus:ring-2 focus:ring-red-500" required>
                     <input type="date" id="date" class="w-full p-3 bg-gray-100 rounded-lg outline-none focus:ring-2 focus:ring-red-500" required>
@@ -137,33 +135,36 @@
                     </button>
                 </form>
             </div>
-
             <div>
-    <h3 class="text-2xl font-bold mb-6">Find Us</h3>
-    <p class="mb-4 font-bold text-gray-700">
-        <i class="fa-solid fa-location-dot text-deep-red mr-2"></i> 
-        Near Sterling Gym, Vidyanagar, Karad, Maharashtra 415124
-    </p>
-    <div class="w-full h-64 bg-gray-300 rounded-2xl overflow-hidden shadow-inner">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2299.1959264264187!2d74.18832644975356!3d17.300349776610464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1822395555553%3A0xa79f21e3d7e09e00!2sHotel%20Red%20Chilly%2C%20Karad!5e0!3m2!1sen!2sin!4v1767256592414!5m2!1sen!2sin" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-</div>
+                <h3 class="text-2xl font-bold mb-6">Find Us</h3>
+                <p class="mb-4 font-bold text-gray-700">
+                    <i class="fa-solid fa-location-dot text-deep-red mr-2"></i> 
+                    Near Sterling Gym, Vidyanagar, Karad, Maharashtra 415124
+                </p>
+                <div class="w-full h-64 bg-gray-300 rounded-2xl overflow-hidden shadow-inner">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.000000000000!2d74.123456!3d17.2854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDE3JzA3LjQiTiA3NMKwMDcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-white py-10 text-center">
-        <p class="text-lg font-bold italic mb-2 text-deep-red uppercase tracking-widest">Hotel Red Chilly</p>
-        <p class="text-gray-400 text-sm italic">Designed for Excellence in Taste.</p>
-    </footer>
+   <footer class="bg-slate-900 text-white py-10 text-center">
+    <p class="text-lg font-bold italic mb-2 text-deep-red uppercase tracking-widest">Hotel Red Chilli</p>
+    
+    <p class="text-gray-400 text-sm mb-4">
+        &copy; 2026 Hotel Red Chilli Karad. All Rights Reserved.
+    </p>
 
+    <p class="text-gray-500 text-xs italic">
+        Designed & Developed by 
+        <a href="https://your-bluechip-website.com" class="text-blue-400 hover:text-white transition underline underline-offset-4">
+            BlueChip Web Labs
+        </a>
+    </p>
+</footer>
+
+    
     <a href="tel:+917620038740" class="fixed bottom-6 left-6 bg-deep-red text-white p-4 rounded-full shadow-2xl z-50 animate-bounce">
         <i class="fa-solid fa-phone"></i>
     </a>
@@ -175,70 +176,57 @@
             const date = document.getElementById('date').value;
             const event = document.getElementById('event').value;
             const msg = document.getElementById('msg').value;
-            
-            // Encode the message for the URL
-            const text = `*New Inquiry for Red Chilly*%0A*Name:* ${name}%0A*Date:* ${date}%0A*Type:* ${event}%0A*Message:* ${msg}`;
-            
-            // Replace with the actual hotel WhatsApp number
+            const text = `*New Inquiry for Red Chilli*%0A*Name:* ${name}%0A*Date:* ${date}%0A*Type:* ${event}%0A*Message:* ${msg}`;
             const phone = "917620038740"; 
             window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
         });
-    </script>
-    <script>
-    (function() {
-        // 1. Create a darkened background (Overlay)
-        const overlay = document.createElement('div');
-        overlay.style = `
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.5); z-index: 9998; display: none;
-        `;
-        
-        // 2. Create the Sidebar Menu (Smaller Width)
-        const sideMenu = document.createElement('div');
-        sideMenu.style = `
-            position: fixed; top: 0; right: -80%; width: 75%; height: 100%; 
-            background: #fff; z-index: 9999; display: flex; flex-direction: column;
-            padding: 40px 20px; transition: right 0.3s ease-out; box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-        `;
-        
-        sideMenu.innerHTML = `
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
-                <span style="font-weight: bold; color: #C41E3A;">RED CHILLY</span>
-                <i class="fa-solid fa-xmark" id="closeMenu" style="font-size: 24px; color: #333; cursor: pointer;"></i>
-            </div>
+
+        // MOBILE SIDEBAR SCRIPT
+        (function() {
+            const overlay = document.createElement('div');
+            overlay.style = `position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9998; display: none;`;
             
-            <div style="display: flex; flex-direction: column; gap: 20px;">
-                <a href="#home" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Home</a>
-                <a href="#menu" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Menu</a>
-                <a href="#hall" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Function Hall</a>
-                <a href="#gallery" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Gallery</a>
-                <a href="#contact" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Contact</a>
-            </div>
-        `;
-        
-        document.body.appendChild(overlay);
-        document.body.appendChild(sideMenu);
+            const sideMenu = document.createElement('div');
+            sideMenu.style = `position: fixed; top: 0; right: -80%; width: 75%; height: 100%; background: #fff; z-index: 9999; display: flex; flex-direction: column; padding: 40px 20px; transition: right 0.3s ease-out; box-shadow: -5px 0 15px rgba(0,0,0,0.1);`;
+            
+            sideMenu.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
+                    <img src="logo.jpg" style="height: 60px; width: auto;" alt="Red Chilli Logo">
+                    <i class="fa-solid fa-xmark" id="closeMenu" style="font-size: 24px; color: #333; cursor: pointer;"></i>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <a href="#home" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Home</a>
+                    <a href="#menu" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Menu</a>
+                    <a href="#hall" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Function Hall</a>
+                    <a href="#gallery" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Gallery</a>
+                    <a href="#contact" style="text-decoration: none; color: #333; font-size: 16px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #f0f0f0;">Contact</a>
+                </div>
+            `;
+            
+            document.body.appendChild(overlay);
+            document.body.appendChild(sideMenu);
 
-        const mobileBtn = document.querySelector('.md\\:hidden.text-deep-red');
-        const closeBtn = document.getElementById('closeMenu');
+            const mobileBtn = document.querySelector('.md\\:hidden.text-deep-red');
+            const closeBtn = document.getElementById('closeMenu');
 
-        const openAction = () => {
-            overlay.style.display = 'block';
-            setTimeout(() => { sideMenu.style.right = '0'; }, 10);
-            document.body.style.overflow = 'hidden';
-        };
+            mobileBtn.addEventListener('click', () => {
+                overlay.style.display = 'block';
+                setTimeout(() => { sideMenu.style.right = '0'; }, 10);
+                document.body.style.overflow = 'hidden';
+            });
 
-        const closeAction = () => {
-            sideMenu.style.right = '-80%';
-            setTimeout(() => { overlay.style.display = 'none'; }, 300);
-            document.body.style.overflow = 'auto';
-        };
+            const closeAction = () => {
+                sideMenu.style.right = '-80%';
+                setTimeout(() => { overlay.style.display = 'none'; }, 300);
+                document.body.style.overflow = 'auto';
+            };
 
-        mobileBtn.addEventListener('click', openAction);
-        closeBtn.addEventListener('click', closeAction);
-        overlay.addEventListener('click', closeAction);
-        sideMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeAction));
-    })();
-</script>
+            closeBtn.addEventListener('click', closeAction);
+            overlay.addEventListener('click', closeAction);
+            sideMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeAction));
+        })();
+    </script>
 </body>
 </html>
+                
+         
