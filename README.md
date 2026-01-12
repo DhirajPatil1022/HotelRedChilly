@@ -1,2 +1,2 @@
-# HotelRedChilly
+# HotelRedChilli
 Hi, I am Dhiraj. 
